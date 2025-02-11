@@ -1,0 +1,31 @@
+git config --global user.name "Delson Pilar"
+-- Configurando o nome de usuário global
+
+git config --global user.email "dubalpilardelson@gmail.com"
+-- configurando o e-mail
+
+touch index.html style.css scripts.js
+-- criando arquivos na pasta. Neste caso, cria-se um arquivo js um css e um html. 
+
+$ git init
+Initialized empty Git repository in C:/Users/Delson/Desktop/teste/.git/
+-- inicializando um repositório
+
+git clone https://github.com/Delson16/projetoGit.git
+-- fazendo o dowload do projeto na internet e o adicionando localmente
+
+$ git add .
+-- colocando arquivos dentro do estage (preparando eles pare serem comitados)
+-- Ponto é paremtro global e adiciona todos os arquivos modificados pare o stage, mas pode-se adicionar o nome de u-- m arquivo desejado adicionando apenas ele a esta eatapa
+-- pode por *.css (adiciona todoas arquivos com esta extensão)
+-- pode por -A para atualizar apenas quem ainda não entrou no stage
+
+git reset index.html
+-- remove um arquivo do stage
+
+git restore index.html 
+-- restaura um arquivo colocando no seu ultimo estado do stage
+
+$ git commit -m "primeiro commit"
+-- realizando o commit. Passou-se o parametro m para passar um recado junto ao commit. Titulo. 
+
