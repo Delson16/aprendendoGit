@@ -33,3 +33,48 @@ $ git commit -a -m "atualizando tudo de uma vez"
 -- Simplificando etapas. Realiza a adição ao estage e logo em seguida realiza o comiit.
 -- ATENÇÃO: Este comando adiciona tudo que foi alterado para o satge. Cuidar para não enviar um arquivo que não devia ou que não faça sentido com o projeto
 
+logs e histórico
+$ git log
+-- mostra o histórico de atualizações com outros commits realizados.
+
+$ git log --author="Delson" 
+-- filtrando por autor
+
+$ git log --oneline -5 --graph
+-- mostra os commit em uma linha apenas
+-- o -5 pega apenas os ultimos 5 commits para exibir
+-- o graph mostra de forma grafica as branchs em desenvolvimento
+
+$ git log main 
+-- vendo o histórico da branch main
+
+$ git shortlog -sn
+-- versão mais curta do log 
+-- sn é opcional e mostra a quantridade de alterações realizada por cada autor
+
+$ git reflog
+-- mostra as utimas alterações realizadas com o git, nãom apenas os commmits (exemplo: troca de computador ou push dados)
+
+BRANCHS 
+
+-- São ramificações para o repositório. Trata-se de uma cópia paralela do proeto para trabalhar de forma independente para não afetas a linha principal de desenvolvimento, sendo assim, cada linha pode ter seus commits e desenvolvimento paralelo antes da união deles.
+
+-- o comando merge mescla o branch secundário com o principal depois de o desevvolvimento da secundária estar pronta 
+
+$ git branch
+-- este comando exibe as branches existentes
+
+$ git branch parametro
+-- podemos colocar qualquer palavra no lugar de parametro e uma branch com aquele nome será criada, se separando da principal
+
+$ git branch -D parametro
+-- forma de excluir a branch criada
+
+$ git checkout -b parametro
+-- criamos a branch nova e já entramos nela 
+
+$ git branch -m parametro
+-- escrevemos no parametro um nome para reescrever o nome atual da branch atual
+
+
+
