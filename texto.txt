@@ -103,3 +103,13 @@ $ git remote show origin
     master pushes to master (up to date)
 
 -- comando mostra informações sobre o link do repositório remoto, além das brnches usadas
+
+$ git merge dev
+-- realiazo o merge. Como não ouve congflitos o git simplismente adicionou as linhas novas a versão mais resente do master 
+
+-- havendo conflitos você deverá ajusta-los pelo editor e em caso de querer desfazer o commit deve-se usar o comando abort
+$ git merge --abort
+-- caso decida proseguir, ajeite os conflitos no editor e depois passe o comando
+$ git merge --continue
+-- assim o git continuará o merge
+
