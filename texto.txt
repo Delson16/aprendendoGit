@@ -29,3 +29,7 @@ git restore index.html
 $ git commit -m "primeiro commit"
 -- realizando o commit. Passou-se o parametro m para passar um recado junto ao commit. Titulo. 
 
+$ git commit -a -m "atualizando tudo de uma vez"
+-- Simplificando etapas. Realiza a adição ao estage e logo em seguida realiza o comiit.
+-- ATENÇÃO: Este comando adiciona tudo que foi alterado para o satge. Cuidar para não enviar um arquivo que não devia ou que não faça sentido com o projeto
+
