@@ -76,5 +76,11 @@ $ git checkout -b parametro
 $ git branch -m parametro
 -- escrevemos no parametro um nome para reescrever o nome atual da branch atual
 
+$ git remote add origin https://github.com/Delson16/aprendendoGit.git
+-- vinculando o git local com um remoto para os comando de push e pull
 
+$ git remote -v 
+-- exibe os links que usamso para acessar o repositório remoto
 
+$ git push -u origin dev
+-- enviando os arquivos para o git remoto 
