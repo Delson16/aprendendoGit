@@ -84,3 +84,22 @@ $ git remote -v
 
 $ git push -u origin dev
 -- enviando os arquivos para o git remoto 
+
+
+Delson@DESKTOP-G15NUN9 MINGW64 ~/Desktop/teste (dev)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Delson16/aprendendoGit.git
+  Push  URL: https://github.com/Delson16/aprendendoGit.git
+  HEAD branch: dev
+  Remote branches:
+    dev    tracked
+    master tracked
+  Local branches configured for 'git pull':
+    dev    merges with remote dev
+    master merges with remote master
+  Local refs configured for 'git push':
+    dev    pushes to dev    (fast-forwardable)
+    master pushes to master (up to date)
+
+-- comando mostra informações sobre o link do repositório remoto, além das brnches usadas
